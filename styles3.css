@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* font */
+#middle-container p{
+    font-size: 17px;
+    text-align: left;
+    margin-top: 15px;
+}
+#middle-container .ab-title{
+    
+    margin-top: 20px;
+}
+/* ------------------------------media-links-------------------- */
+.media-links{
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   top: 50%;
+   z-index: 0;
+   transform: translate(0,-50%);
+}
+.codechef-tab{
+    background-color: #947777;
+}
+.codechef-img{
+    height: 37px;
+}
+.codeforces-tab{
+    background-color: #eceef3;
+}
+.codeforces-img{
+    height: 32px;
+}
+.facebook{
+    background-color: #3b5998;
+}
+
+.github{
+    background-color: #171412;
+}
+
+.instagram {
+    color: #fff;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.linkedin{
+    background-color: #0a66c2;
+}
+
+.media-icon{
+    float: right;
+    padding-top: 1.3vh;
+    padding-right: 1.5vh;
+}
+
+.social{
+    height: 48px;
+    width: 48px;
+    transition: 0.5s ease;
+
+}
+
+.social:hover{
+    width: 75px;
+}
+
+/*------------------navigation--------------------*/
+
+.navigation{
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    height: 8vh;
+    width: 100%;
+    background-color: #eef1f5;
+}
+
+
+.top-list{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: right;
+    padding: 2vh;
+    padding-right: 7vh;
+
+}
+.top-list li a{
+    border: 0.5px solid transparent;
+    text-decoration: none;
+    color: black;
+    transition: 0.6s ease;
+    font-size: 3vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin: 2px;
+    transition: 0.5s ease;
+}
+
+.top-list li a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    transition: 0s ease;
+
+}
+
+
+/* ------------------------------------------------ */
+
+/* -------------------------------------------------------------------- */
+
+.main{
+    z-index: -1;
+    background-image: linear-gradient(to top, #d6def1 0%, #eef1f5 100%);
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.name{
+    margin-top: 42vh;
+    font-family: 'Poiret One', cursive;
+    font-size: 6vh;
+}
+
+.about{
+    font-size: 3vh;
+    padding: 2vh;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/*----------------- Middle Container----------------- */
+.mid{
+    height: 70vh;
+    background-color: rgba(217, 212, 247, 0.845);
+    width: 100%;
+}
+#middle-container{
+    display: block;
+    position: absolute;    
+    margin: -20vh 10% auto 10%;
+    height: 50vh;
+    border-radius: 3vh;
+    width: 80%;
+    background-color: #fff;
+}
+.img-intro{
+    height: 30vh;
+    width: auto;
+    float: left;
+    padding: 10vh 8vh;
+}
+
+.skills{
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    height: 60vh;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40vh;
+    border-radius: 3vh;
+}
+
+.sub{
+    height: 60vh;
+    width:33.33% ;
+}
+
+.first{
+    background-color: #fff;
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+    margin-right: 1px;
+    border-right: 1px solid transparent;
+}
+.second{
+    background-color: #fff;
+    border-right: 1px solid transparent;
+    margin-right: .5px;
+
+}
+.third{
+    background-color: #fff;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+.skill-icon{
+    padding: 15%;
+    color: rgb(173, 179, 238);
+}
+.ab-mid{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.h3-ab{
+    font-size: 16px;
+    padding: 10px;
+}
+p{
+    font-size: 12px;
+}
+
+/*-------------------after-mid---------------------*/
+.after-mid{
+    z-index: -1;
+    height: 153vh;
+    background-image: linear-gradient(rgba(217, 212, 247, 0.845), rgb(193, 197, 235));
+    display: flex;
+    justify-content: center;
+    
+}
+.resume-tab{
+    z-index: 0;
+    /* float: left; */
+    border-radius: 3vh;
+    height: 100vh;
+    width: 70%;
+    margin-top: 40vh;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.resume-title{
+    background-color: white;
+    height: 10vh;
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+}
+
+.title-div{
+    display: flex; 
+    align-items: center; 
+    margin-left: 4px;
+}
+.title-div hr{
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 20px; 
+    height: 1px; 
+    border-style: none; 
+    border-top: 2px solid rgb(30, 29, 29); 
+
+}
+.title{
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    background-color: white;
+    /* border-top: 1px solid; */
+}
+/* .title1{
+    background-color: rgb(237, 155, 155);
+    border: 1px solid transparent;
+}
+.title2{
+    background-color: rgb(72, 72, 139);
+}*/
+.title3{
+    margin-top: 0.5px;
+    border-bottom-right-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+} 
+.down-cv{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    /* border-radius: 1vh; */
+    background-color: transparent;
+}
+.down-cv-button{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vh;
+    background-color: rgb(127, 141, 199);
+    border: none;
+    transition: ease;
+    transition-duration: 0.2s;
+}
+.down-cv-button:hover{
+    background-color: rgb(92, 62, 224);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.h2-title1{
+    float: left;
+    padding: 10px 5px;
+
+}
+.h2-title2{
+    float: left;
+    padding: 15px;
+
+}
+.h2-title3{
+    float: left;
+    padding: 15px;
+
+}
+
+/* Content in Resume tab */
+.content{
+    margin: 0px 60px;
+    height: 60%;
+}
+
+.resume-table{
+    width: 100%;
+    height: 100%;
+}
+.resume-table td{
+    text-align: left;
+    vertical-align: top;
+}
+
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-attachment: fixed; */
+    background-position: center;
+    opacity: 0.7;
+
+}
