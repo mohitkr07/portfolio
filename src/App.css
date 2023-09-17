@@ -5,3 +5,11 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
+
+/* .pages{
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+} */
