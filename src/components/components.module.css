@@ -2,10 +2,9 @@
 
 .page{
     /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
-    background: rgb(30, 30, 30);
     width: 100%;
     height: 100vh;
-    
+    scroll-snap-align: start;
 }
 
 /* -------------Home-------------- */
@@ -22,19 +21,8 @@
     justify-content: space-between;
     color: #dfdfdf;
 }
-/* .home-content{
-    width: 50%;
-    height: 50%;
-    color: #fff;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 .profile-pic{
-    /* height: 10rem; */
     width: 20rem;
     margin: 10px 0;
 }
@@ -44,8 +32,6 @@
 }
 .title-name h2{
     margin: 10px 0;
-}
-.description p{
 }
 
 .home-right{
@@ -100,4 +86,6 @@
     width: 100%;
     z-index: 1;
 }
+
+/* ----------projects--------- */
 
