@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 
-import Header from "./components/utils/header";
 import Social from "./components/utils/social";
 import Squares from "./components/animations/squares";
 
@@ -12,7 +11,6 @@ const App = () => {
     <>
       <Squares />
       <Social />
-      <Header />
       <Portfolio />
     </>
   );
