@@ -58,3 +58,109 @@
     color: #fff;
     font-weight: bold;
 }
+
+/* -------project-card----------- */
+.project-card{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 80%;
+    z-index: 3;
+    transition: width 0.5s, height 0.5s;
+}
+.project-img img{
+    height: 80%;
+    width: 100%;
+    filter: brightness(70%);
+    transition: filter 0.5s;
+}
+
+
+/* If the cube is directly inside the container:
+#container:hover > #cube { background-color: yellow; }
+
+If cube is next to (after containers closing tag) the container:
+#container:hover + #cube { background-color: yellow; }
+
+If the cube is somewhere inside the container:
+#container:hover #cube { background-color: yellow; }
+
+If the cube is a sibling of the container:
+#container:hover ~ #cube { background-color: yellow; } */
+
+.project-img:hover ~ .project-description{
+    left: 0;
+    transition: ease 0.5s;
+}
+.project-img:hover{
+    width: 60%;
+    height: 90%;
+    filter: brightness(100%);
+    transition: 0.5s ease;
+}
+.project-img img:hover{
+    filter: brightness(100%);
+}
+
+
+.project-description{
+    color: rgb(242, 242, 242);
+    position: relative;
+    width: 70%;
+    z-index: 4;
+    left: -4rem;
+    background-color: rgba(2, 2, 2, 0.5);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    transition: left 0.5s;
+    margin-left: 10px;
+    
+}
+.project-description ul{
+    /* list-style-type: none; */
+}
+.project-description ul{
+    margin-left: 1.5rem;
+}
+.project-description ul li, .project-description p{
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 1px rgb(226, 155, 14),
+        0 0 7px rgb(226, 155, 14),
+        0 0 5px rgb(226, 155, 14),
+        0 0 3px rgb(226, 155, 14),
+        0 0 1px rgb(226, 155, 14);
+  }
+
+  .neonText:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 1px rgb(226, 155, 14),
+        0 0 7px rgb(226, 155, 14),
+        0 0 5px rgb(226, 155, 14),
+        0 0 3px rgb(226, 155, 14),
+        0 0 1px rgb(226, 155, 14);
+  }
