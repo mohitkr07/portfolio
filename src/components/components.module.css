@@ -89,6 +89,7 @@
 
 /* ----------projects--------- */
 .projects{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,11 +97,32 @@
 .project-div{
     width: 75%;
     height: 32rem;
-    background: rgba(100 , 100, 100, 0.2);
+    background: rgba(100 , 100, 100, 0.1);
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #868686; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

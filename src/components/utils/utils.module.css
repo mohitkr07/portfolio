@@ -63,11 +63,12 @@
 .project-card{
     display: flex;
     flex-direction: row;
-    width: 90%;
-    height: 30rem;
+    width: 95%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    scroll-snap-align: start;
 }
 .project-img{
     display: flex;
@@ -164,3 +165,34 @@ If the cube is a sibling of the container:
         0 0 3px rgb(226, 155, 14),
         0 0 1px rgb(226, 155, 14);
   }
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+  .redirect-link{
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .redirect-link i:hover{
+    text-shadow:
+        0 0 2px #fff,
+        0 0 1px #fff,
+        0 0 1px #fff,
+        0 0 1px rgb(226, 155, 14),
+        0 0 1px rgb(226, 155, 14),
+        0 0 1px rgb(226, 155, 14),
+        0 0 1px rgb(226, 155, 14),
+        0 0 1px rgb(226, 155, 14);
+    cursor: pointer;
+  }
+
+  .redirect-link a{
+    color: white;
+  }
+
