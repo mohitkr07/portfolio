@@ -1,5 +1,6 @@
 import styles from "./components.module.css";
 import SkillCard from "./utils/skillcard";
+import styles1 from "./utils/utils.module.css"
 
 const Skills = () => {
   return (
@@ -9,7 +10,7 @@ const Skills = () => {
           <p style={{ color: "#fff" }}>SKILLS</p>
           <hr></hr>
         </div>
-        <div className={styles["skill-list"]}>
+        <div className={`${styles["skill-list"]} ${styles["neonText"]}`}>
           <SkillCard location="icons/react-js.svg" />
           <SkillCard location="icons/javascript.svg" />
           <SkillCard location="icons/nodejs2.svg" />

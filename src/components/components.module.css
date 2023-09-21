@@ -230,4 +230,56 @@
     background: rgba(100 , 100, 100, 0.06);
     
 }
+
+
+/* ----------skills---------- */
+.title{
+    width: 100%;
+    display: flex;
+    padding-left: 5.5rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.title p{
+    font-size: 2.5rem;
+}
+.title hr{
+    margin-right: 4rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1.2px solid rgb(203, 203, 203);
+    margin-left: 1.5rem;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-list{
+    width: 80%;
+    justify-content: space-between;
+    max-height: 60%;
+    overflow-y: scroll;
+    background: rgba(100, 100, 100, 0.1);
+    border: 1px solid #d47800;
+}
+.skill-list::-webkit-scrollbar{
+    display: none;
+}
+.skill-box{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 10px;
+    margin: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #545454;
+}
+.skill-box img{
+    width: 100%;
+    z-index: 1;
+}
 }
