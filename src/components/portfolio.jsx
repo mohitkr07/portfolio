@@ -1,9 +1,11 @@
+import { useRef } from "react";
 import styles from "./portfolio.module.css";
+import Header from "./utils/header";
+
 import Home from "./home";
 import Projects from "./projects";
 import Skills from "./skills";
-import Header from "./utils/header";
-import { useRef } from "react";
+import GetInTouch from "./getInTouch";
 
 const Portfolio = () => {
   const scrollableDivRef = useRef(null);
@@ -19,6 +21,7 @@ const Portfolio = () => {
         <Home />
         <Projects />
         <Skills />
+        <GetInTouch />
       </div>
     </>
   );

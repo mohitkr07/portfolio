@@ -192,7 +192,130 @@ If the cube is a sibling of the container:
     cursor: pointer;
   }
 
+/* animation */
+
+
+  
   .redirect-link a{
     color: white;
   }
 
+  .menu-bar{
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px){
+    .social{
+      display: none;
+    }
+    .hide-nav-web{
+      display: none;
+    }
+    .nav-web{
+        padding: 0 0 1rem 0;
+        height: auto;
+        flex-direction: column;
+        z-index: 5;
+        align-items: flex-end;
+    }
+    .nav-web-options{
+        backdrop-filter: blur(5px);
+        width: 100%;
+        padding: 2.5rem 0 1rem 0;
+    }
+
+    .menu-bar{
+        display: flex;
+        justify-content: flex-end;
+        height: auto;
+        padding: 0.5rem 1rem;
+        position: absolute;
+        z-index: 22;
+    }
+    .nav-web-options ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    .nav-web-options ul li{
+        margin: 0 20px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+        font-size: 70%;
+        display: flex;
+        align-items: center;
+        height: 2rem;
+        text-align: left;
+    }
+    .nav-web-options ul li:hover{
+        font-weight: normal;
+        text-decoration: none;
+    }
+    .nav-web-options ul li:active{
+        font-weight: normal;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 71%;
+    }
+
+    label{
+        display:flex;
+         flex-direction:column;
+         width:40px;
+         cursor:pointer;
+       }
+       
+       label span{
+         background: #fff;
+         border-radius:10px;
+         height:2.5px;
+         margin: 4px 0;
+         transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+       
+       }
+       
+       
+       span:nth-of-type(1){
+         width:50%;
+         
+       }
+       
+       span:nth-of-type(2){
+         width:100%;
+       }
+       
+       
+       span:nth-of-type(3){
+         width:75%;
+        
+       }
+       
+       
+       input[type="checkbox"]{
+         display:none;
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(1){
+         transform-origin:bottom;
+         transform:rotatez(45deg) translate(5px,0px)
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(2){
+         
+         transform-origin:top;
+         transform:rotatez(-45deg)
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(3){
+         
+         transform-origin:bottom;
+         width:50%;
+         transform: translate(16px,-4px) rotatez(45deg);
+       
+       }
+
+}
