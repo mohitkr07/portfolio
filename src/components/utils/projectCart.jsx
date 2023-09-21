@@ -16,9 +16,9 @@ const ProjectCard = (props) => {
           >
             {props.title}
           </p>
-          <span className={`${styles["redirect-link"]}`}>
+          <span style={{width: "auto"}} className={`${styles["redirect-link"]}`}>
             <a href={props.github} target="_blank">
-              <i class="fa-brands fa-github"></i>
+              <i style={{marginRight: "15px"}} class="fa-brands fa-github"></i>
             </a>
 
             <a href={props.live} target="_blank">
@@ -36,11 +36,11 @@ const ProjectCard = (props) => {
             return <li key={key}>{i}</li>;
           })}
         </ul>
-        <table>
+        {/* <table>
           <thead>
             <td></td>
           </thead>
-        </table>
+        </table> */}
       </div>
     </div>
   );

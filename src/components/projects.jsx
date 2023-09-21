@@ -35,22 +35,22 @@ const Projects = () => {
             github="https://github.com/mohitkr07/online-marketplace"
             live="https://city-market-onlinemarket.onrender.com/"
           />
-            <ProjectCard
-              imgLocation="projects/lms.png"
-              title="Learning Management System"
-              belowTitle="Build comprehensive Institue Management system"
-              points={lms}
-              github="https://github.com/mohitkr07/Major-Project"
-              live="#"
-            />
           <ProjectCard
-            imgLocation="projects/weather.png"
-            title="Weather-Ex"
-            belowTitle="Developed and deployed comprehensive Weather Application"
-            points={weatherEx}
-            github="https://github.com/mohitkr07/weather-app"
-            live="https://weather-ex.onrender.com/"
+            imgLocation="projects/lms.png"
+            title="Learning Management System"
+            belowTitle="Build comprehensive Institue Management system"
+            points={lms}
+            github="https://github.com/mohitkr07/Major-Project"
+            live="#"
           />
+        <ProjectCard
+          imgLocation="projects/weather.png"
+          title="Weather-Ex"
+          belowTitle="Developed and deployed comprehensive Weather Application"
+          points={weatherEx}
+          github="https://github.com/mohitkr07/weather-app"
+          live="https://weather-ex.onrender.com/"
+        />
         </div>
       </div>
     </>
