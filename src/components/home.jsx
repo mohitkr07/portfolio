@@ -20,7 +20,7 @@ const Home = () => {
             >
               Hi There!
             </p>
-            <span>
+            <span style={{width: "auto"}}>
               {/* <h3 style={{  marginRight: "20px", fontSize: "150%" }}>I'm</h3> */}
               <h1
                 style={{ fontSize: "3em", color: "#fff", marginBottom: "10px" }}
