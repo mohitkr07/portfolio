@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
       title: 'Mobile Application Developer',
       location: 'Poulima Infotech',
       date: 'Nov 2023 - Feb 2024',
-      description: 'Built and maintained client websites, implemented new features, and participated in code reviews to improve code quality.',
+      description: 'Developed and maintained mobile applications, implemented new features, and participated in code reviews to enhance code quality and ensure best practices.',
       type: 'work'
     },
     // {
