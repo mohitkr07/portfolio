@@ -71,9 +71,8 @@ const About: React.FC = () => {
             <h3 className="text-2xl font-semibold mb-6">Who I am</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
               I&apos;m a dedicated software developer with a B.Tech degree
-              (2024) and one year of professional experience at a data analytics
-              company. Specializing in JavaScript, React.js, and responsive
-              design, I’ve collaborated with teams to build scalable,
+              (2024) and one year of professional experience as a Software Developer. Specializing in JavaScript, React.js, responsive
+              design and few Backend Technologies as well. I&apos;ve collaborated with teams to build scalable,
               user-friendly web applications that solve complex challenges and
               deliver impactful digital experiences.
             </p>
