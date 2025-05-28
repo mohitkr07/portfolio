@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Github, ExternalLink, Code } from 'lucide-react';
+import MakLens from '../../public/image_search.png'
 
 interface Project {
   id: number;
@@ -8,7 +9,7 @@ interface Project {
   image: string;
   tags: string[];
   githubLink: string;
-  liveLink: string;
+  liveLink?: string;
   category: string;
 }
 
@@ -18,64 +19,64 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-commerce Platform',
-      description: 'A full-featured e-commerce platform with product management, cart functionality, and payment processing.',
-      image: 'https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com',
+      title: 'AI Scenario Analyzer',
+      description: 'AI scenario analysis platform where specialized GPT-4 agents collaborate to deliver fast, domain-specific insights across Legal, Finance, Marketing, and Engineering.',
+      image: '/scenario_analyzer.png',
+      tags: ['React', 'FastAPI', 'OpenAI'],
+      githubLink: 'https://github.com/mohitkr07/insight_fusion-backend',
+      // liveLink: 'https://example.com',
       category: 'fullstack'
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team workspaces.',
-      image: 'https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com',
+      title: 'WriteWave: Quote Sharing app via image post creation',
+      description: 'A quote-sharing app that lets users turn inspiring words into visually stunning image posts for easy sharing.',
+      image: 'https://images.unsplash.com/photo-1652007558047-b45f31bd3c6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      tags: ['React Native', 'Node.js', 'Cloudinary', 'Express', 'MongoDB', 'Mongoose'],
+      githubLink: 'https://github.com/mohitkr07/weather-app',
+      // liveLink: 'https://weather-app-pi-five-75.vercel.app/',
       category: 'frontend'
-    },
+    }, 
     {
       id: 3,
-      title: 'Fitness Tracking API',
-      description: 'A RESTful API for fitness tracking applications with user authentication and data analytics.',
-      image: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com',
-      category: 'backend'
+      title: 'E-commerce Platform',
+      description: 'A full-featured e-commerce platform with product management, cart functionality',
+      image: 'https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'],
+      githubLink: 'https://github.com/mohitkr07/online-marketplace',
+      // liveLink: 'https://example.com',
+      category: 'fullstack'
     },
     {
       id: 4,
-      title: 'Weather Dashboard',
-      description: 'An interactive weather dashboard that displays current and forecasted weather data from multiple sources.',
-      image: 'https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React', 'Chart.js', 'API Integration', 'Geolocation'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com',
+      title: 'MakLens: Image Search Web App',
+      description: '',
+      image: '/image_search.png',
+      tags: ['React', 'ES6', 'API', 'Unsplash'],
+      githubLink: 'https://github.com/mohitkr07/Mak-Lens-Web',
+      liveLink: 'https://mak-image-searcher-rm3nmqj2b-mohits-projects-f377a2e5.vercel.app/',
       category: 'frontend'
     },
     {
       id: 5,
-      title: 'Social Media Analytics',
-      description: 'A dashboard for analyzing social media performance across multiple platforms with custom reporting.',
-      image: 'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React', 'Python', 'Django', 'D3.js'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com',
-      category: 'fullstack'
+      title: 'Image Search Mobile Application',
+      description: 'A comprehensive browse application for high quality images.',
+      image: 'https://plus.unsplash.com/premium_photo-1719839720714-6641042b78a8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXBwfGVufDB8MHwwfHx8MA%3D%3D',
+      tags: ['React Native', 'API', 'Unsplash'],
+      githubLink: 'https://github.com/mohitkr07/Mak-Lens',
+      // liveLink: 'https://example.com',
+      category: 'mobile'
     },
     {
       id: 6,
-      title: 'Inventory Management System',
-      description: 'A comprehensive inventory management system with barcode scanning and supplier management.',
-      image: 'https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React Native', 'Node.js', 'MongoDB', 'GraphQL'],
-      githubLink: 'https://github.com',
-      liveLink: 'https://example.com',
-      category: 'mobile'
-    }
+      title: 'Weather Dashboard',
+      description: 'An interactive weather dashboard that displays current and forecasted weather data from multiple sources.',
+      image: '/weather_app.png',
+      tags: ['React', 'Chart.js', 'API Integration', 'Geolocation'],
+      githubLink: 'https://github.com/mohitkr07/weather-app',
+      liveLink: 'https://weather-app-pi-five-75.vercel.app/',
+      category: 'frontend'
+    },
   ];
   
   const filteredProjects = filter === 'all' 
@@ -171,14 +172,14 @@ const Projects: React.FC = () => {
                       >
                         <Github size={20} />
                       </a>
-                      <a
+                      {project.liveLink && <a
                         href={project.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/40 transition-colors"
                       >
                         <ExternalLink size={20} />
-                      </a>
+                      </a>}
                     </div>
                   </div>
                 </div>
@@ -196,12 +197,12 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <button 
+                {project.liveLink && <button 
                   className="mt-2 flex items-center text-teal-500 hover:text-teal-600 transition-colors"
                   onClick={() => window.open(project.liveLink, '_blank')}
                 >
                   View Project <ExternalLink size={16} className="ml-1" />
-                </button>
+                </button>}
               </div>
             </div>
           ))}

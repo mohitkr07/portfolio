@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,22 +30,31 @@ const Contact: React.FC = () => {
     setSubmitting(true);
     setError("");
 
-    // Simulate form submission
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-      }, 3000);
-    }, 1500);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+        formRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setSubmitting(false);
+          setSubmitted(true);
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+          setTimeout(() => setSubmitted(false), 3000);
+        },
+        (error) => {
+          setError("Failed to send message. Please try again.");
+          setSubmitting(false);
+          console.error("EmailJS error:", error.text);
+        }
+      );
   };
 
   return (
@@ -172,7 +183,7 @@ const Contact: React.FC = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/mohit_kr07/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-600 dark:text-gray-400 hover:bg-teal-500 hover:text-white transition-colors"
@@ -233,7 +244,7 @@ const Contact: React.FC = () => {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label
