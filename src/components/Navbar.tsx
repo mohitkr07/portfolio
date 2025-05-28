@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
+import { Menu, X, Sun, Moon, Github, Linkedin } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faXTwitter} from '@fortawesome/free-brands-svg-icons'
 

@@ -1,49 +1,50 @@
-import React from "react";
-import { Code, Layout, Database, Sparkles, Palette } from "lucide-react";
+import React from 'react';
+import { Code, Layout, Database, Sparkles, Palette } from 'lucide-react';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   const skills = [
     {
       id: 1,
       icon: <Code size={24} />,
-      title: "Frontend Development",
+      title: 'Frontend Development',
       description:
-        "Building responsive websites React, and modern CSS frameworks.",
+        'Building responsive websites React, and modern CSS frameworks.',
       technologies: [
-        "React",
-        "JavaScript",
-        "TypeScript",
-        "Tailwind CSS",
-        "Next.js",
+        'React',
+        'JavaScript',
+        'TypeScript',
+        'Tailwind CSS',
+        'Next.js',
       ],
     },
     {
       id: 2,
       icon: <Database size={24} />,
-      title: "Backend Development",
-      description: "Creating robust APIs and server-side applications.",
-      technologies: ["Node.js", "Express", "Django", "PostgreSQL", "MongoDB"],
+      title: 'Backend Development',
+      description: 'Creating robust APIs and server-side applications.',
+      technologies: ['Node.js', 'Express', 'Django', 'PostgreSQL', 'MongoDB'],
     },
     {
       id: 3,
       icon: <Layout size={24} />,
-      title: "UI/UX Design",
-      description: "Designing intuitive user interfaces and experiences.",
-      technologies: ["Figma", "Design Systems"],
+      title: 'UI/UX Design',
+      description: 'Designing intuitive user interfaces and experiences.',
+      technologies: ['Figma', 'Design Systems'],
     },
     {
       id: 4,
       icon: <Sparkles size={24} />,
-      title: "Mobile Development",
-      description: "Building cross-platform mobile applications.",
-      technologies: ["React Native", "TypeScript", "Redux", "Jest/Detox"],
+      title: 'Mobile Development',
+      description: 'Building cross-platform mobile applications.',
+      technologies: ['React Native', 'TypeScript', 'Redux', 'Jest/Detox'],
     },
     {
       id: 5,
       icon: <Palette size={24} />,
-      title: "DevOps",
-      description: "Automating deployment and infrastructure management.",
-      technologies: ["Docker", "Kubernetes", "CI/CD", "AWS"],
+      title: 'DevOps',
+      description: 'Automating deployment and infrastructure management.',
+      technologies: ['Docker', 'Kubernetes', 'CI/CD', 'AWS'],
     },
     // {
     //   id: 6,
@@ -69,12 +70,12 @@ const About: React.FC = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">Who I am</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              I'm a dedicated software developer with a B.Tech degree (2024) and
-              one year of professional experience at a data analytics company.
-              Specializing in JavaScript, React.js, and responsive design, I’ve
-              collaborated with teams to build scalable, user-friendly web
-              applications that solve complex challenges and deliver impactful
-              digital experiences.
+              I&apos;m a dedicated software developer with a B.Tech degree
+              (2024) and one year of professional experience at a data analytics
+              company. Specializing in JavaScript, React.js, and responsive
+              design, I’ve collaborated with teams to build scalable,
+              user-friendly web applications that solve complex challenges and
+              deliver impactful digital experiences.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
               My passion for clean, efficient code drives me to embrace agile
@@ -86,11 +87,13 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="order-first lg:order-last flex justify-center items-center">
-            <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-teal-500 shadow-lg">
-              <img
+            <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-teal-500 shadow-lg">
+              <Image
                 src="/profile.jpeg"
                 alt="Profile"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                priority
               />
             </div>
           </div>

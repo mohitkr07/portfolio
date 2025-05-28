@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowRight, Github, Linkedin } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faXTwitter} from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image';
 
 
 const Hero: React.FC = () => {
@@ -23,7 +24,7 @@ const Hero: React.FC = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight opacity-0 transform translate-y-4"
             style={{ animation: 'fadeInUp 0.8s ease-out forwards 0.2s' }}
           >
-            <span className="block">Hello, I'm</span>
+            <span className="block">Hello, I&apos;m</span>
             <span className="block mt-2 text-teal-500">Mohitkumar Mahto</span>
             <span className="block mt-2">Software Developer</span>
           </h1>
@@ -92,10 +93,12 @@ const Hero: React.FC = () => {
         >
           <div className="relative">
             <div className="w-full h-[500px] bg-gradient-to-br from-teal-500/20 to-blue-500/20 rounded-2xl overflow-hidden">
-              <img 
+              <Image 
                 src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                 alt="Developer"
                 className="w-full h-full object-cover mix-blend-overlay"
+                fill
+    style={{ objectFit: 'cover' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
             </div>
