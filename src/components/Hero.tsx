@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           >
             <span className="block">Hello, I&apos;m</span>
             <span className="block mt-2 text-teal-500">Mohitkumar Mahto</span>
-            <span className="block mt-2">Software Developer</span>
+            <span className="block mt-2">Software Engineer</span>
           </h1>
           
           <p 

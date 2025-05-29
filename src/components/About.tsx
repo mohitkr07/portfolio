@@ -70,23 +70,20 @@ const About: React.FC = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">Who I am</h3>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              I&apos;m a dedicated software developer with a B.Tech degree
-              (2024) and one year of professional experience as a Software Developer. Specializing in JavaScript, React.js, responsive
-              design and few Backend Technologies as well. I&apos;ve collaborated with teams to build scalable,
-              user-friendly web applications that solve complex challenges and
-              deliver impactful digital experiences.
+              I&apos;m a software developer with a B.Tech (2024) and a year of
+              experience, specializing in JavaScript, React.js, responsive
+              design, and Node.js with expertise in frontend and full-stack
+              development.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              My passion for clean, efficient code drives me to embrace agile
-              methodologies and create solutions that prioritize user needs.
-              Beyond coding, I find inspiration in strategizing over a
-              chessboard and playing the piano, blending creativity and
-              precision to approach both my work and life with a fresh
-              perspective.
+              I&apos;m passionate about technology and innovation, I thrive on
+              solving problems and enjoy collaborating on impactful projects.
+              Let&apos;s connect and explore opportunities in the dynamic world of
+              tech.
             </p>
           </div>
           <div className="order-first lg:order-last flex justify-center items-center">
-            <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-teal-500 shadow-lg">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-teal-500 shadow-lg">
               <Image
                 src="/profile.jpeg"
                 alt="Profile"
