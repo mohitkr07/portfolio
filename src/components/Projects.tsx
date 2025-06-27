@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
       description:
         'AI scenario analysis platform where specialized GPT-4 agents collaborate to deliver fast, domain-specific insights across Legal, Finance, Marketing, and Engineering.',
       image: '/scenario_analyzer.png',
-      tags: ['React', 'FastAPI', 'OpenAI'],
+      tags: ['React.js', 'FastAPI', 'OpenAI'],
       githubLink: 'https://github.com/mohitkr07/insight_fusion-backend',
       // liveLink: 'https://example.com',
       category: 'fullstack',
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
         'A full-featured e-commerce platform with product management, cart functionality',
       image:
         'https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'],
+      tags: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Cloudinary'],
       githubLink: 'https://github.com/mohitkr07/online-marketplace',
       // liveLink: 'https://example.com',
       category: 'fullstack',
@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
       title: 'MakLens: Image Search Web App',
       description: '',
       image: '/image_search.png',
-      tags: ['React', 'ES6', 'API', 'Unsplash'],
+      tags: ['React.js', 'ES6', 'API', 'Unsplash'],
       githubLink: 'https://github.com/mohitkr07/Mak-Lens-Web',
       liveLink:
         'https://mak-image-searcher-rm3nmqj2b-mohits-projects-f377a2e5.vercel.app/',
@@ -84,11 +84,22 @@ const Projects: React.FC = () => {
     },
     {
       id: 6,
+      title: 'Open In App Onboarding UI',
+      description:
+        'An interactive UI for open-in-app onboarding, designed to enhance user experience with smooth transitions.',
+      image: '/open_in_app.png',
+      tags: ['React.js', 'Firebase'],
+      githubLink: 'https://github.com/mohitkr07/open-in-app',
+      liveLink: 'https://openinapp.mohitkumar.info/',
+      category: 'frontend',
+    },
+    {
+      id: 7,
       title: 'Weather Dashboard',
       description:
         'An interactive weather dashboard that displays current and forecasted weather data from multiple sources.',
       image: '/weather_app.png',
-      tags: ['React', 'Chart.js', 'API Integration', 'Geolocation'],
+      tags: ['React.js', 'Chart.js', 'API Integration', 'Geolocation'],
       githubLink: 'https://github.com/mohitkr07/weather-app',
       liveLink: 'https://weather-app-pi-five-75.vercel.app/',
       category: 'frontend',
